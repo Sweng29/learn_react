@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 // Changing Contact Component from Container to UI component
 
-class Contact extends Component{
-    render(){
-        const {contactPersons} = this.props;
+const Contact = (props) => {
+        const {contactPersons} = props;
         console.log(contactPersons);
         const contactPersonsList = contactPersons.map(person =>{
             return (
@@ -20,6 +19,5 @@ class Contact extends Component{
                 {contactPersonsList}
             </div>
         );
-    }
 }
 export default Contact
