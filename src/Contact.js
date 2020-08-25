@@ -2,8 +2,7 @@ import React from 'react';
 
 // Changing Contact Component from Container to UI component
 
-const Contact = (props) => {
-        const {contactPersons} = props;
+const Contact = ({contactPersons}) => {
         console.log(contactPersons);
         const contactPersonsList = contactPersons.map(person =>{
             return (
