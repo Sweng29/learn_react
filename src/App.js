@@ -9,6 +9,7 @@ class App extends Component {
       {name:'Kashif Ali',age:'23',email:'khosokashif@gmail.com',id:1},
       {name:'Rehan Ali',age:'25',email:'rehanali@gmail.com',id:2},
       {name:'Asif Ali',age:'24',email:'asifali@gmail.com',id:3},
+      {name:'Ali',age:'15',email:'ali@gmail.com',id:4},
     ]
   };
 
