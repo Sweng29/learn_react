@@ -1,5 +1,6 @@
 import React , { Component } from 'react';
 import Contact from './Contact'
+import AddContact from './AddContact'
 import './App.css';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
       <div className="App">
         <div>Welcome to my first react App</div>
         <div>This is Parent component</div>
+        <AddContact/>
         <Contact contactPersons={this.state.contactPersons}></Contact>
       </div>
     );
