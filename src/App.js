@@ -14,12 +14,21 @@ class App extends Component {
     ]
   };
 
+  addContact = (contact) =>{
+    contact.id = Math.random();
+    // ... is spread operator used to clone an object
+    let contactPersons = [...this.state.contactPersons,contact];
+    this.setState({
+        contactPersons : contactPersons,
+    });
+  }
+
   render(){
     return (
       <div className="App">
         <div>Welcome to my first react App</div>
         <div>This is Parent component</div>
-        <AddContact/>
+        <AddContact addContact={this.addContact}/>
         <Contact contactPersons={this.state.contactPersons}></Contact>
       </div>
     );
